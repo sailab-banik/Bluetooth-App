@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Bluetooth App</string>
+
+    <string name="on_btn">On</string>
+    <string name="off_btn">Off</string>
+    <string name="discover_btn">Pair New Devices</string>
+    <string name="devices_btn">Paired Devices</string>
 </resources>
