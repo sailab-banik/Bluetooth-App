@@ -5,4 +5,5 @@
     <string name="off_btn">Off</string>
     <string name="discover_btn">Pair New Devices</string>
     <string name="devices_btn">Paired Devices</string>
+    <string name="device_name">Device Name</string>
 </resources>

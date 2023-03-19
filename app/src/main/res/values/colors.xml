@@ -9,7 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="bluetooth_color">#0082FC</color>
-    <color name="on_color">#00FF00</color>
-    <color name="off_color">#FF0000</color>
+    <color name="on_color">#8000FF00</color>
+    <color name="off_color">#80FF0000</color>
     <color name="gray_color">#FFFAFAFA</color>
 </resources>
