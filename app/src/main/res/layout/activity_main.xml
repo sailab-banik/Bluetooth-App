@@ -10,7 +10,7 @@
         android:id="@+id/bluetooth_img"
         android:layout_width="88dp"
         android:layout_height="88dp"
-        android:src="@drawable/ic_baseline_bluetooth_24"
+        android:src="@drawable/ic_baseline_bluetooth_disabled_24"
         android:layout_margin="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
