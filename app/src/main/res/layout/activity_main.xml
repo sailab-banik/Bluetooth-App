@@ -25,7 +25,7 @@
         android:backgroundTint="@color/on_color"
         android:text="@string/on_btn"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/bluetooth_img"
         app:layout_constraintTop_toTopOf="parent" />
@@ -39,7 +39,7 @@
         android:backgroundTint="@color/off_color"
         android:text="@string/off_btn"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/on_btn"
         app:layout_constraintTop_toTopOf="parent" />
@@ -66,27 +66,55 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/device_name" />
 
-    <Button
-        android:id="@+id/devices_btn"
+    <TextView
+        android:id="@+id/devices_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="48dp"
+        android:text="@string/devices_tv"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_device_name"/>
+
+    <ListView
+        android:id="@+id/lv_paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/devices_tv" />
+
+    <Button
+        android:id="@+id/scan_discover_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="@color/gray_color"
-        android:text="@string/devices_btn"
+        android:text="@string/discover_btn"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/my_device_name" />
+        app:layout_constraintTop_toBottomOf="@+id/lv_paired_devices"/>
 
     <ListView
-        android:id="@+id/lv_paired_devices"
-        android:layout_width="wrap_content"
+        android:id="@+id/lv_scanned_devices"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/devices_btn" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scan_discover_btn"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
